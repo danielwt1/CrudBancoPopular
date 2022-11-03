@@ -70,6 +70,7 @@ public class ClienteServiceImpl implements ClienteService {
         Cliente response = this.clientRepo.findById(clienteDTO.getId_cliente())
                 .orElseThrow(()-> new ResourceNotFoundException("No se encuentra informacion con el ID : "+clienteDTO.getId_cliente()));
         Cliente clienteSave = this.mapper.map(clienteDTO,Cliente.class);
+        clienteSave.setId(response.getId());
 
         return this.mapper.map(this.clientRepo.save(clienteSave),ClienteDTO.class);
     }

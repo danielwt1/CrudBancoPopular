@@ -25,7 +25,7 @@ http://localhost:8080/api/Cliente/update
 // Find cliente by id cliente (INDICE)
 
 
-http://localhost:8080/api/Cliente/findByIdCliente/1
+http://localhost:8080/api/Cliente/findByIdCliente/1 //no equiere bodsy
 
 //
 FIND BY ID
@@ -33,4 +33,4 @@ http://localhost:8080/api/Cliente/findById/{idUser}
 
 //delete
 
-http://localhost:8080/api/Cliente/delete/1
+http://localhost:8080/api/Cliente/delete/1 //parametro es 1
